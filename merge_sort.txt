@@ -1,0 +1,7 @@
+merge_sort calls merge_sort2 with
+ list, setting 0 as first and last index.
+if the starting index isn't last:
+    the middle is calculated
+    merge_sort2 is called for the list, between the start and the middle.
+
+# NOT DONE #
