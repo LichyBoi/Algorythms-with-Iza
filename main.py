@@ -7,6 +7,7 @@
 
 import timeit
 import random
+import sys
 
 
 ## WRAPPER FUNCTION - so that you can use our sort functions as a parameter when using the timeit module
@@ -57,6 +58,7 @@ def bubbleSort(myList):
     return (myList)
 
 
+# IZA
 def shellSort(arr):
     length = len(arr)
     gap = (length // 2)
@@ -72,6 +74,7 @@ def shellSort(arr):
     return (arr)
 
 
+# IZA
 def insertionSort(alist):
     for i in range(1, len(alist)):
         tmp = alist[i]
@@ -96,6 +99,7 @@ def insertion_sort_optimized(A):
         A[k + 1] = curNum
 
 
+# ANDREW
 def merge_sort(A):
     merge_sort2(A, 0, len(A) - 1)
 
@@ -126,6 +130,7 @@ def merge(A, first, middle, last):
 ## SEARCH FUNCTIONS
 ## ----------------
 
+# ANDREW
 def linearSearch(myItem, myList):
     found = False
     position = 0
@@ -136,6 +141,7 @@ def linearSearch(myItem, myList):
     return found
 
 
+# IZA
 def binarySearch(myItem, myList):
     # myList.sort() - list must be sorted
     found = False
@@ -151,11 +157,12 @@ def binarySearch(myItem, myList):
             top = middle - 1
     return found
 
+
 ## PART 5
 ## ---------------
 
-def randArray (n):
-     return [num = random.randint(1,1000) for i in range(n)]
+def randArray(n):
+    return [random.randint(1, 1000) for i in range(n)]
 
 
 ## TESTING PROCESS
