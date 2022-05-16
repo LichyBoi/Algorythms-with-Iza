@@ -1,0 +1,15 @@
+def shellSort(arr): --> parameter is a unsorted array
+    length = len(arr) --> length is the length of the unsorted array
+    gap = (length // 2) --> gap is half the length of the array
+    while (gap > 0): --> while half gap is greater than 0
+        for a in range(gap, (length)): --> itterates through range [gap,length)
+            temp = arr[a] --> temp is an item in the array with index a
+            j = a --> j is equal to a
+            while (j >= gap) and (arr[j - gap] > temp): --> while j is greater or equal to gap and and the item of the array with index j-gap is greater than temp
+                arr[j] = arr[j - gap] --> replace item of array with index j with the item of array with index j-gap
+                j -= gap --> subtract gap from j
+            arr[j] = temp --> make the new item of the array with index j equal to temp
+        gap = (gap // 2) --> divide gap by 2 and round it down to the lowest whole number
+    return (arr) --> return the sorted array
+    
+    ### NOT DONE ###
