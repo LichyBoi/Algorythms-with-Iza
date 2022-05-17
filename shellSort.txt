@@ -13,3 +13,14 @@ def shellSort(arr): --> parameter is a unsorted array
     return (arr) --> return the sorted array
     
     ### NOT DONE ###
+[10,6,4,7,3,8,2,9,1,5]
+
+you split the array in half
+you compare the 1st number in the second half with the 1st number in the first half
+you put the smaller number in the first half and the bigger number in the second half
+then you half it again
+now there are quarters
+you repeat the steps until you cannot half anymore
+you have a sorted list
+
+    ### STILL NOT DONE ###
