@@ -7,3 +7,16 @@ def insertionSort(alist): --> parameter is a unsorted array
             k -= 1 --> reduce k by 1
             alist[k] = tmp --> make index k of the array have an item eqaul to temp
     return alist --> return srted list
+
+you start with the secon number in the array and comapre it with the first
+if the second number is less than the first number swap their postitions
+then you move on to the third number
+if the third number is less than the second, swap
+if the third number(now second) is less than the first, swap
+continue until sorted
+
+General Logic:
+Compare a number with the number below it if its smaller swap
+
+    ### NOT DONE ###
+    but idk what else to add and how to explain
