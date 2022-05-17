@@ -1,0 +1,26 @@
+def binarySearch(myItem, myList): --> parameter is the number you want to find and the unsorted list
+    myList.sort() -- > sort list
+    found = False --> found is a boolean that is False
+    bottom = 0 --> bottom is 0
+    top = len(myList) - 1 --> top is the higest index of the list
+    while bottom <= top and not found: --> while bottom is less than or equal to top (while you havent chacked everything) and you havet found the item
+        middle = (bottom + top) // 2 --> find the middle index of the array
+        if myList[middle] == myItem: --> if the item of the middle index is what you are looking for return true
+            found = True
+        elif myList[middle] < myItem: --> if the item of the middle index is less than the item you are looking for
+            bottom = middle + 1 --> make bottom equal to middle plus 1 becasue you know all the values bellow are less than your item
+        else: --> if the item of the middle index is greater than the item you are looking for
+            top = middle - 1 --> make top equal to middle minus 1 becasue you know all the values above are greater than your item
+    return found --> return if the item was found (True or False)
+
+
+
+      check if the middle item is your item
+      if its greater only focus on the first half of the array
+      if its smaller only focus on the second half of the array
+      check the middle of the new section
+      repeat until item found
+      
+      ### NOT DONE ###
+      idk what else to add but i dont feel done
+   
